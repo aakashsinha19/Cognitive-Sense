@@ -26,7 +26,9 @@ https://docs.microsoft.com/en-us/azure/machine-learning/desktop-workbench/tutori
 
 _____________________________________________________________________________________________
 
-## About the Code (demo1.py)
+## About the Code (demo1.py) - Titanic Problem
+
+#### Get the dataset from this link -> https://www.kaggle.com/c/titanic/data
 
 #### Use the Azure Machine Learning data preparation package
 
