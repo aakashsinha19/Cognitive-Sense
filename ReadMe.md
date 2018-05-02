@@ -32,14 +32,17 @@ ________________________________________________________________________________
 ## About the Code (demo1.py)
 
 ### Use the Azure Machine Learning data preparation package
+
 from azureml.dataprep import package
 
 
 ### Use the Azure Machine Learning data collector to log various metrics
+
 from azureml.logging import get_azureml_logger
 from azureml.dataprep.package import run
 
 ### Import important libraries required for building the model
+
 from sklearn.preprocessing import Imputer
 import pandas as pd
 import numpy as np
