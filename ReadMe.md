@@ -5,10 +5,7 @@
 
 ## Complete Tutorial on Azure Machine Learning Services (PDF)
 
-https://opdhsblobprod01.blob.core.windows.net/contents/
-4a6d75bb3af747de838e6ccc97c5d978/ce7aa906e78f42e8a43cc95f71c4bdae?
-sv=2015-04-05&sr=b&sig=FQZhStzcqKucXCjrsVibhNulQAoLq%2B5H%2BrF5kqP66xQ%3D&st=
-2018-05-02T06%3A30%3A28Z&se=2018-05-03T06%3A40%3A28Z&sp=r
+https://opdhsblobprod01.blob.core.windows.net/contents/4a6d75bb3af747de838e6ccc97c5d978/ce7aa906e78f42e8a43cc95f71c4bdae?sv=2015-04-05&sr=b&sig=FQZhStzcqKucXCjrsVibhNulQAoLq%2B5H%2BrF5kqP66xQ%3D&st=2018-05-02T06%3A30%3A28Z&se=2018-05-03T06%3A40%3A28Z&sp=r
 
 ______________________________________________________________________________________________________________
 
