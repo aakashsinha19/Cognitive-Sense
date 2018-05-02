@@ -7,7 +7,7 @@
 
 https://opdhsblobprod01.blob.core.windows.net/contents/4a6d75bb3af747de838e6ccc97c5d978/ce7aa906e78f42e8a43cc95f71c4bdae?sv=2015-04-05&sr=b&sig=FQZhStzcqKucXCjrsVibhNulQAoLq%2B5H%2BrF5kqP66xQ%3D&st=2018-05-02T06%3A30%3A28Z&se=2018-05-03T06%3A40%3A28Z&sp=r
 
-## _____________________________________________________________________________________________________________________________
+_____________________________________________________________________________________________
 
 ## Step By Step Tutorial 
 
@@ -24,7 +24,7 @@ https://docs.microsoft.com/en-us/azure/machine-learning/desktop-workbench/tutori
 
 https://docs.microsoft.com/en-us/azure/machine-learning/desktop-workbench/tutorial-classifying-iris-part-3
 
-## _____________________________________________________________________________________________________________________________
+_____________________________________________________________________________________________
 
 ## About the Code (demo1.py)
 
@@ -225,7 +225,7 @@ f = open('E:/Azure Boot Camp/Project/Demo Project/Demo1/Demo1/outputs/model.pkl'
 pickle.dump(clf1, f) <br/>
 f.close() <br/>
 
-## _____________________________________________________________________________________________________________________________
+_____________________________________________________________________________________________
 
 ### For any doubts, you can reach out to - 
 ### 1. Harshal Wavre (harshal.wavre@valuemomentum.biz)
