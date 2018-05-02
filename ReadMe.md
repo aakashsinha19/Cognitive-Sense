@@ -1,7 +1,7 @@
 # Azure Bootcamp 2018 - ValueMomentum
 ## Azure Machine Learning Services
 
-### @AakashSinha2018
+#### @AakashSinha2018
 
 ## Complete Tutorial on Azure Machine Learning Services (PDF)
 
@@ -35,20 +35,57 @@ from azureml.dataprep import package
 
 ### Use the Azure Machine Learning data collector to log various metrics
 
-from azureml.logging import get_azureml_logger
-from azureml.dataprep.package import run
+from azureml.logging import get_azureml_logger <br/>
+from azureml.dataprep.package import run <br/>
 
 ### Import important libraries required for building the model
 
-from sklearn.preprocessing import Imputer
-import pandas as pd
-import numpy as np
-from sklearn.linear_model import LogisticRegression
-import sys
-from sklearn import preprocessing
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import classification_report
-from sklearn.metrics import confusion_matrix
-from sklearn.metrics import precision_recall_curve
-import os
-import pickle
+from sklearn.preprocessing import Imputer <br/>
+import pandas as pd <br/>
+import numpy as np <br/>
+from sklearn.linear_model import LogisticRegression <br/>
+import sys <br/>
+from sklearn import preprocessing <br/>
+from sklearn.model_selection import train_test_split <br/>
+from sklearn.metrics import classification_report <br/>
+from sklearn.metrics import confusion_matrix <br/>
+from sklearn.metrics import precision_recall_curve <br/>
+import os <br/>
+import pickle <br/>
+
+### Initializing the Logger (Azure ML Logger will keep track of all the activities/modifications taking place during the session.
+run_logger = get_azureml_logger()
+
+### Creating an output folder for storing the output files (eg - pickle file, json file) 
+os.makedirs('E:/Azure Boot Camp/Project/Demo Project/Demo1/Demo1/outputs', exist_ok=True)
+
+### This call will load the referenced package and return a DataFrame.If run in a PySpark environment, this call returns a Spark DataFrame. If not, it will return a Pandas DataFrame.
+
+### Loading the Titanic Dataset 
+titanic_train = run('demo1.dprep', dataflow_idx=0, spark=False)
+
+### Obtaining the shape of data (Total Number of Rows and Columns)
+print ('Titanic dataset shape: {}'.format(titanic_train.shape))
+
+### Exlporing Missing Data
+titanic_train.apply(lambda x : sum(x.isnull()))
+
+### Embarked (Boarding Point) - Replacing all the special characters, if any, with NaN values and then replacing NaN value with 'S' (Maximum Occurance)
+
+titanic_train['Embarked'].replace('r^\s+$',np.NaN,regex=True,inplace=True) <br/>
+titanic_train['Embarked'].replace(np.NaN,'S',regex=True,inplace=True) <br/>
+
+
+# Age (Age of the Passenger) - Imputer is used when we are not aware of which technique to use for replacing missing values. By using imputer -  If “mean”, then replace missing values using the mean along the axis. If “median”, then replace missing values using the median along the axis. If “most_frequent”, then replace missing using the most frequent value along the axis.
+
+imp = Imputer(missing_values="NaN",strategy='mean',axis=0) <br/>
+imp.fit(titanic_train[['Age']]) <br/>
+titanic_train['Age'] = imp.fit_transform(titanic_train[['Age']]).ravel() <br/>
+
+
+
+
+
+### For any doubts, reach out to me at aakash.sinha@valuemomentum.biz or connect with me on LinkedIn - https://www.linkedin.com/in/aakashsinha19/
+
+
