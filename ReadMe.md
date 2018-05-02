@@ -1,7 +1,7 @@
-#### Azure Bootcamp 2018 - ValueMomentum
-### Azure Machine Learning Services
+# Azure Bootcamp 2018 - ValueMomentum
+## Azure Machine Learning Services
 
-## @AakashSinha2018
+### @AakashSinha2018
 
 ## Complete Tutorial on Azure Machine Learning Services (PDF)
 
@@ -15,15 +15,15 @@ ________________________________________________________________________________
 ## Step By Step Tutorial 
 
 
-# Tutorial 1 : Classify Iris - Preparing the data
+### Tutorial 1 : Classify Iris - Preparing the data
 
 https://docs.microsoft.com/en-us/azure/machine-learning/desktop-workbench/tutorial-classifying-iris-part-1
 
-# Tutorial 2 : Classify Iris - Build a model
+### Tutorial 2 : Classify Iris - Build a model
 
 https://docs.microsoft.com/en-us/azure/machine-learning/desktop-workbench/tutorial-classifying-iris-part-2
 
-# Tutorial 3 : Classify Iris: Deploy a model
+### Tutorial 3 : Classify Iris: Deploy a model
 
 https://docs.microsoft.com/en-us/azure/machine-learning/desktop-workbench/tutorial-classifying-iris-part-3
 
@@ -31,15 +31,15 @@ ________________________________________________________________________________
 
 ## About the Code (demo1.py)
 
-# Use the Azure Machine Learning data preparation package
+### Use the Azure Machine Learning data preparation package
 from azureml.dataprep import package
 
 
-# Use the Azure Machine Learning data collector to log various metrics
+### Use the Azure Machine Learning data collector to log various metrics
 from azureml.logging import get_azureml_logger
 from azureml.dataprep.package import run
 
-# Import important libraries required for building the model
+### Import important libraries required for building the model
 from sklearn.preprocessing import Imputer
 import pandas as pd
 import numpy as np
